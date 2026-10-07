@@ -1,0 +1,17 @@
+spring: 
+  application: 
+    name: cornerbox-api
+    version: 0.0.1
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cornerbox
+    username: cornerbox
+    password: hypersecretpasswordr
+    driver-class-name: org.postgresql.Driver
+
+  #Hibernate 
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      format-sql: true
