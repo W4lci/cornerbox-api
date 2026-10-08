@@ -6,7 +6,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/cornerbox
     username: cornerbox
-    password: hypersecretpasswordr
+    password: hypersecretpassword
     driver-class-name: org.postgresql.Driver
 
   #Hibernate 
