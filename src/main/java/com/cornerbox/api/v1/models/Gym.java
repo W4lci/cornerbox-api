@@ -1,4 +1,4 @@
-package com.cornerbox.api.models;
+package com.cornerbox.api.v1.models;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,8 +28,12 @@ public class Gym {
     @Column (name = "email", nullable = false)
     private String email;
 
+    @Column(name = "capacity", nullable = false)
+    private Integer capacity;
+
     @Column (name = "created_at", nullable = false)
     private LocalDateTime createdAt;
+
 
 
     @PrePersist 
