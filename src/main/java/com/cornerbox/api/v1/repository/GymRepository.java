@@ -11,9 +11,13 @@ import java.util.Optional;
 
 @Repository
 public interface GymRepository  extends JpaRepository<Gym, Long> {
+
+    
     Optional<Gym> findById(Long id);
     
     Optional<Gym> findByName(String name);
 
     Optional<Gym> findByEmail(String email);
+
+    boolean existsByEmail(String email);
 }

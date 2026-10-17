@@ -17,5 +17,10 @@ public record GymCreateRequest (
 
     @NotBlank(message = "Gym email is required")
     @Email(message = "Gym email must be a valid email address")
-    String email
+    String email,
+
+    @NotNull(message = "Gym capacity is required")
+    @Min(value = 1, message = "Gym capacity must be at least 1")
+    Integer capacity
+
  ) {}

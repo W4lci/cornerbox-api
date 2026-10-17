@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 @Table(name = "gym")
 @Getter 
 @Setter 
+@NoArgsConstructor
 @AllArgsConstructor  
 @Builder
 public class Gym {
